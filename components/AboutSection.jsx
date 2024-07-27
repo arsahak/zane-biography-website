@@ -2,13 +2,15 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import { Mulish, Bitter } from "next/font/google";
+
 import { Suspense } from "react";
 import SectionLayout from "./shared/SectionLayout";
 import VideoPlayer from "./shared/Video/VideoPlayer";
 import MotionEffect from "./motion/MotionEffect";
 import ScondayButton from "./shared/ScondayButton";
-
+import { FaMapLocationDot } from "react-icons/fa6";
+import { HiFlag } from "react-icons/hi2";
+import { Mulish, Bitter } from "next/font/google";
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
 
@@ -37,7 +39,7 @@ const AboutSection = () => {
             <MotionEffect effect="fade-left" duration="2000">
               <div className="">
                 <h2
-                  className={`text-stone-950 font-bold text-4xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
+                  className={`text-stone-950 font-bold text-4xl mb-4 text-center md:text-left ${bitter.className}`}
                 >
                   About Me
                 </h2>
@@ -48,46 +50,56 @@ const AboutSection = () => {
                   duo. Ut ludus vulputate qui, movartem accom modare eos no, vix
                   error percipitur.
                 </p>
-                <div className="">
-                  <ul class="max-w-md space-y-1 text-gray-500 list-inside ">
+                <div className="flex gap-x-10">
+                  <ul class="max-w-md space-y-3 text-gray-500 list-inside ">
                     <li class="flex items-center">
-                      <svg
-                        class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                      </svg>
-                      <span class="font-semibold text-gray-900 dark:text-white">
-                        Bonnie Green
+                      <FaMapLocationDot className="text-slate-900 w-5 h-5 mr-2" />
+                      <span class="font-bold text-gray-900 mr-1">
+                        Location: {"  "}
                       </span>
-                      10 characters
+                      Victoria, BC
                     </li>
                     <li class="flex items-center">
-                      <svg
-                        class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                      </svg>
-                      At least one lowercase character
+                      <HiFlag className="text-slate-900 w-5 h-5 mr-2" />
+                      <span class="font-bold text-gray-900 mr-1">
+                        Nationality:
+                        {"  "}
+                      </span>
+                      Canadian / Irish
                     </li>
                     <li class="flex items-center">
-                      <svg
-                        class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                      </svg>
-                      At least one special character, e.g., ! @ # ?
+                      <HiFlag className="text-slate-900 w-5 h-5 mr-2" />
+                      <span class="font-bold text-gray-900 mr-1">
+                        Study:
+                        {"  "}
+                      </span>
+                      University of Victoria
+                    </li>
+                  </ul>
+                  <ul class="max-w-md space-y-3 text-gray-500 list-inside ">
+                    <li class="flex items-center">
+                      <FaMapLocationDot className="text-slate-900 w-5 h-5 mr-2" />
+                      <span class="font-bold text-gray-900 mr-1">
+                        Age:
+                        {"  "}
+                      </span>
+                      29
+                    </li>
+                    <li class="flex items-center">
+                      <HiFlag className="text-slate-900 w-5 h-5 mr-2" />
+                      <span class="font-bold text-gray-900 mr-1">
+                        Interests:
+                        {"  "}
+                      </span>
+                      Motorcycles, Muay Thai, Banjos
+                    </li>
+                    <li class="flex items-center">
+                      <HiFlag className="text-slate-900 w-5 h-5 mr-2" />
+                      <span class="font-bold text-gray-900 mr-1">
+                        Employment:
+                        {"  "}
+                      </span>
+                      Instant Domains, inc.
                     </li>
                   </ul>
                 </div>
