@@ -4,6 +4,7 @@ import { Button } from "@nextui-org/react";
 import { send } from "emailjs-com";
 import Swal from "sweetalert2";
 import SectionLayout from "./shared/SectionLayout";
+import { SITECONFIG } from "@/config/siteData";
 import CardMotion from "./motion/CardMotion";
 import { Mulish, Bitter } from "next/font/google";
 const bitter = Bitter({ subsets: ["latin"] });
@@ -111,7 +112,7 @@ const ContactSection = () => {
           y: 100,
         }}
       >
-        <div className="grid grid-cols-1 lg:grid-cols-3 md:gap-x-12 gap-x-0">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:gap-x-12 gap-y-10">
           <div className="flex flex-col col-span-1 lg:col-span-2 mt-12 md:mt-0">
             <form className="w-full" onSubmit={handleSubmit}>
               <div class="mb-6 w-full">
@@ -207,11 +208,6 @@ const ContactSection = () => {
                   Submit
                 </Button>
               )}
-
-              <p className="mt-8 text-lg text-stone-950 text-center md:text-left">
-                *I understand that the use of this form for communication with
-                Trip Law, P.A
-              </p>
             </form>
           </div>
           <div className="space-y-4">
@@ -231,11 +227,10 @@ const ContactSection = () => {
                 </svg>
               </div>
               <h1 className="mt-5 mb-2 text-2xl font-semibold tracking-normal text-center md:text-left text-black">
-                231 N. Kentucky Ave. Ste. 213, <br />
-                Lakeland, Florida 33801
+                {SITECONFIG?.contactDataInfo?.address}
               </h1>
               <p className="text-base text-stone-950 text-center md:text-left">
-                Our Location
+                My Location
               </p>
             </div>
 
@@ -255,7 +250,7 @@ const ContactSection = () => {
                 </svg>
               </div>
               <h1 className="mt-5 mb-2 text-2xl font-semibold tracking-normal text-center md:text-left text-black">
-                (863)-599-6735
+                {SITECONFIG?.contactDataInfo?.phone}
               </h1>
               <p className="text-lg text-stone-950 text-center md:text-left">
                 Let’s Talk
@@ -275,7 +270,7 @@ const ContactSection = () => {
                 </svg>
               </div>
               <h1 className="mt-5 mb-2 text-2xl font-semibold tracking-normal text-center md:text-left text-black">
-                info@trip-law.com
+                {SITECONFIG?.contactDataInfo?.email}
               </h1>
               <p className="text-base text-stone-950 text-center md:text-left">
                 Drop a Line

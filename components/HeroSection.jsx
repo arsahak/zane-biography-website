@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SectionLayout from "./shared/SectionLayout";
 import HomeSilderBg from "./HomeSilderBg";
+import { SITECONFIG } from "@/config/siteData";
 
 const bitter = Bitter({ subsets: ["latin"] });
 
@@ -14,36 +15,23 @@ const HeroSection = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
-  const text = "Hardam Tripathi, Esq.".split(" ");
+  const text = SITECONFIG?.heroBannerInfo?.mainTitle?.split(" ");
+
+  const primaryColor = SITECONFIG?.sitePrimaryColor;
+  const secondaryColor = `text-${SITECONFIG?.siteSecondaryColor}`;
+  const textColor = SITECONFIG?.siteTextColor;
 
   return (
     <div className="relative md:overflow-hidden">
-      <div className="relative h-[480px] md:h-[800px]">
-        {/* <Image
-          src="/assets/horo-banner1.png"
-          alt="home-banner"
-          layout="fill"
-          objectFit="cover"
-          priority
-          className="z-10 hidden md:block"
-          rel="preload"
-        /> */}
+      <div className="relative h-[480px] md:h-[880px] ">
         <div className="z-10 ">
-          <HomeSilderBg />
+          <HomeSilderBg
+            silderData={SITECONFIG?.heroBannerInfo?.heroBgSilderImg}
+          />
         </div>
 
-        {/* <Image
-          src="/assets/home/trip-low-hero-bg-for-mobile.jpg"
-          alt="home-banner"
-          layout="fill"
-          objectFit="cover"
-          priority
-          className="z-10 md:hidden block"
-          rel="preload"
-        /> */}
-
         <motion.div
-          className="absolute inset-0 z-20 my-0 flex items-center ju"
+          className="absolute inset-0 z-20 my-0 flex items-center bg-[#0215269c]"
           initial="hidden"
           animate="visible"
           exit={{ opacity: 0, transition: { duration: 1 } }}
@@ -54,9 +42,9 @@ const HeroSection = () => {
               <div className="col-span-2">
                 <motion.h2
                   variants={variants}
-                  className="text-red-700 font-black text-xl md:text-3xl text-center"
+                  className={`font-black text-xl md:text-3xl text-center text-red-700`}
                 >
-                  Giving You Advices That Matters
+                  {SITECONFIG?.heroBannerInfo?.topTitle}
                 </motion.h2>
                 <div className="flex justify-center">
                   <motion.hr
@@ -82,10 +70,10 @@ const HeroSection = () => {
                   variants={variants}
                   className="text-white text-md md:text-lg mt-4 md:mt-5 text-center"
                 >
-                  Connecting Families To Their Immigration Dream
+                  {SITECONFIG?.heroBannerInfo?.subTitle}
                 </motion.p>
 
-                <motion.div
+                {/* <motion.div
                   variants={variants}
                   className="mt-5 md:mt-8 flex justify-center"
                 >
@@ -101,7 +89,7 @@ const HeroSection = () => {
                   >
                     (863)-599-6735
                   </Link>
-                </motion.div>
+                </motion.div> */}
               </div>
             </div>
           </SectionLayout>

@@ -1,16 +1,14 @@
-"use client";
 import Image from "next/image";
 import React from "react";
+import { SITECONFIG } from "@/config/siteData";
 import { motion } from "framer-motion";
-
 import { Suspense } from "react";
-import SectionLayout from "./shared/SectionLayout";
-import VideoPlayer from "./shared/Video/VideoPlayer";
 import MotionEffect from "./motion/MotionEffect";
 import ScondayButton from "./shared/ScondayButton";
-import { FaMapLocationDot } from "react-icons/fa6";
-import { HiFlag } from "react-icons/hi2";
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+
 import { Mulish, Bitter } from "next/font/google";
+import SectionLayout from "./shared/SectionLayout";
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
 
@@ -24,9 +22,9 @@ const AboutSection = () => {
               <div className="flex justify-center items-start">
                 <div className="">
                   <Image
-                    src="/assets/horo-banner1.png"
-                    alt="home-banner"
-                    width={300}
+                    src={SITECONFIG?.aboutMeInfo?.aboutImg}
+                    alt="About Image"
+                    width={450}
                     height={400}
                     className=""
                     rel="preload"
@@ -35,7 +33,7 @@ const AboutSection = () => {
               </div>
             </MotionEffect>
           </div>
-          <div className="col-span-2">
+          <div className="col-span-1  md:col-span-2">
             <MotionEffect effect="fade-left" duration="2000">
               <div className="">
                 <h2
@@ -45,62 +43,35 @@ const AboutSection = () => {
                 </h2>
 
                 <p className="mb-4 text-lg text-stone-950 text-center md:text-left">
-                  Accumsan volutpat ocurreret id nam, solet numquam accommodare
-                  quo et. Et vidit choro aliquid pro, ad inani eirmod vituperata
-                  duo. Ut ludus vulputate qui, movartem accom modare eos no, vix
-                  error percipitur.
+                  {SITECONFIG?.aboutMeInfo?.aboutMe}
                 </p>
-                <div className="flex gap-x-10">
-                  <ul class="max-w-md space-y-3 text-gray-500 list-inside ">
-                    <li class="flex items-center">
-                      <FaMapLocationDot className="text-slate-900 w-5 h-5 mr-2" />
-                      <span class="font-bold text-gray-900 mr-1">
-                        Location: {"  "}
-                      </span>
-                      Victoria, BC
-                    </li>
-                    <li class="flex items-center">
-                      <HiFlag className="text-slate-900 w-5 h-5 mr-2" />
-                      <span class="font-bold text-gray-900 mr-1">
-                        Nationality:
-                        {"  "}
-                      </span>
-                      Canadian / Irish
-                    </li>
-                    <li class="flex items-center">
-                      <HiFlag className="text-slate-900 w-5 h-5 mr-2" />
-                      <span class="font-bold text-gray-900 mr-1">
-                        Study:
-                        {"  "}
-                      </span>
-                      University of Victoria
-                    </li>
+
+                <div className="flex flex-col md:flex-row gap-x-16 gap-y-5 justify-center md:justify-start">
+                  <ul class="max-w-md space-y-6 text-gray-500 list-inside ">
+                    {SITECONFIG?.aboutMeInfo?.personalInfoLeft?.map(
+                      (el, index) => (
+                        <li class="flex md:justify-start justify-center items-center">
+                          <IoMdCheckmarkCircleOutline className="text-slate-900 w-5 h-5 mr-2" />
+                          <span class="font-bold text-gray-900 mr-1">
+                            {el?.title}
+                          </span>
+                          {el?.details}
+                        </li>
+                      )
+                    )}
                   </ul>
-                  <ul class="max-w-md space-y-3 text-gray-500 list-inside ">
-                    <li class="flex items-center">
-                      <FaMapLocationDot className="text-slate-900 w-5 h-5 mr-2" />
-                      <span class="font-bold text-gray-900 mr-1">
-                        Age:
-                        {"  "}
-                      </span>
-                      29
-                    </li>
-                    <li class="flex items-center">
-                      <HiFlag className="text-slate-900 w-5 h-5 mr-2" />
-                      <span class="font-bold text-gray-900 mr-1">
-                        Interests:
-                        {"  "}
-                      </span>
-                      Motorcycles, Muay Thai, Banjos
-                    </li>
-                    <li class="flex items-center">
-                      <HiFlag className="text-slate-900 w-5 h-5 mr-2" />
-                      <span class="font-bold text-gray-900 mr-1">
-                        Employment:
-                        {"  "}
-                      </span>
-                      Instant Domains, inc.
-                    </li>
+                  <ul class="max-w-md space-y-6 text-gray-500 list-inside ">
+                    {SITECONFIG?.aboutMeInfo?.personalInfoRight?.map(
+                      (el, index) => (
+                        <li class="flex md:justify-start justify-center items-center">
+                          <IoMdCheckmarkCircleOutline className="text-slate-900 w-5 h-5 mr-2" />
+                          <span class="font-bold text-gray-900 mr-1">
+                            {el?.title}
+                          </span>
+                          {el?.details}
+                        </li>
+                      )
+                    )}
                   </ul>
                 </div>
               </div>

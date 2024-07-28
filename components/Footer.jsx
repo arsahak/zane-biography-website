@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { SITECONFIG } from "@/config/site";
+import { SITECONFIG } from "@/config/siteData";
 import SectionLayout from "./shared/SectionLayout";
 
 const Footer = () => {
@@ -9,9 +9,9 @@ const Footer = () => {
     <>
       <footer className="bg-[#1B2639]">
         <SectionLayout>
-          <div className="flex sm:justify-center gap-3">
+          <div className="flex justify-center gap-3">
             <Link
-              href="https://www.facebook.com/TripLawPA"
+              href={SITECONFIG?.socialLinks[0]?.url}
               target="_blank"
               className="text-[#1B2639] hover:animate-pulse bg-slate-200 rounded-full p-2"
             >
@@ -32,7 +32,7 @@ const Footer = () => {
             </Link>
 
             <Link
-              href="https://www.instagram.com/trip_law_/"
+              href={SITECONFIG?.socialLinks[1]?.url}
               target="_blank"
               className="text-[#1B2639] hover:animate-pulse bg-slate-200 rounded-full p-2"
             >
@@ -47,7 +47,7 @@ const Footer = () => {
               <span className="sr-only">Facebook page</span>
             </Link>
             <Link
-              href="https://www.youtube.com/@triplawpa"
+              href={SITECONFIG?.socialLinks[2]?.url}
               target="_blank"
               className="text-[#1B2639] hover:animate-pulse bg-slate-200 rounded-full p-2"
             >
