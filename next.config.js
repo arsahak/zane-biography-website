@@ -21,6 +21,11 @@ const nextConfig = {
         hostname: "res.cloudinary.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "nextui.org",
+        port: "",
+      },
     ],
   },
   skipTrailingSlashRedirect: true,

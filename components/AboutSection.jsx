@@ -9,6 +9,7 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 import { Mulish, Bitter } from "next/font/google";
 import SectionLayout from "./shared/SectionLayout";
+import AboutSilder from "./AboutSilder";
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
 
@@ -78,6 +79,9 @@ const AboutSection = () => {
             </MotionEffect>
           </div>
         </div>
+      </div>
+      <div className="mt-5 mx-6">
+        <AboutSilder silderData={SITECONFIG?.aboutSilderImageList} />
       </div>
     </SectionLayout>
   );

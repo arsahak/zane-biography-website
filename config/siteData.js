@@ -128,11 +128,23 @@ export const SITECONFIG = {
       colSpan: "md:col-span-4",
       imageDate: "5 Jun 2018 - 31 Dec 2018",
       imageTitle: "Stream the Acme event",
-      mainImageUrl: "https://nextui.org/images/card-example-4.jpeg",
+      mainImageUrl: "/gallery-image/pexels-cottonbro-3944417.jpg",
       imageList: [
-        "https://nextui.org/images/card-example-4.jpeg",
-
-        "https://nextui.org/images/card-example-4.jpeg",
+        {
+          imgUrl: "/gallery-image/pexels-cottonbro-6804612.jpg",
+        },
+        {
+          imgUrl: "/gallery-image/pexels-fotios-photos-1369476.jpg",
+        },
+        {
+          imgUrl: "/gallery-image/pexels-jakubzerdzicki-26689753.jpg",
+        },
+        {
+          imgUrl: "/gallery-image/pexels-mikhail-nilov-9158719.jpg",
+        },
+        {
+          imgUrl: "/gallery-image/pexels-mikhail-nilov-9158719.jpg",
+        },
       ],
     },
 
@@ -141,12 +153,45 @@ export const SITECONFIG = {
       colSpan: "md:col-span-6",
       imageDate: "5 Jun 2020 - 31 Dec 2022",
       imageTitle: "Stream the Acme event",
-      mainImageUrl: "https://nextui.org/images/card-example-4.jpeg",
+      mainImageUrl: "/gallery-image/pexels-tima-miroshnichenko-9572509.jpg",
       imageList: [
-        "https://nextui.org/images/card-example-4.jpeg",
-
-        "https://nextui.org/images/card-example-4.jpeg",
+        {
+          imgUrl: "/gallery-image/hero-banner-two.jpg",
+        },
+        {
+          imgUrl: "/gallery-image/pexels-cottonbro-3944417.jpg",
+        },
+        {
+          imgUrl: "/gallery-image/hero-banner-one.jpg",
+        },
+        {
+          imgUrl: "/gallery-image/hero-banner-three.jpg",
+        },
+        {
+          imgUrl: "/gallery-image/hero-banner-two.jpg",
+        },
+        {
+          imgUrl: "/gallery-image/pexels-cottonbro-3944417.jpg",
+        },
       ],
+    },
+  ],
+
+  aboutSilderImageList: [
+    {
+      imgUrl: "/gallery-image/pexels-cottonbro-6804612.jpg",
+    },
+    {
+      imgUrl: "/gallery-image/pexels-fotios-photos-1369476.jpg",
+    },
+    {
+      imgUrl: "/gallery-image/pexels-jakubzerdzicki-26689753.jpg",
+    },
+    {
+      imgUrl: "/gallery-image/pexels-mikhail-nilov-9158719.jpg",
+    },
+    {
+      imgUrl: "/gallery-image/pexels-mikhail-nilov-9158719.jpg",
     },
   ],
 

@@ -1,17 +1,12 @@
 import React from "react";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Image,
-  Button,
-} from "@nextui-org/react";
+
 import SectionLayout from "./shared/SectionLayout";
 import { SITECONFIG } from "@/config/siteData";
 
 import { Mulish, Bitter } from "next/font/google";
 import Link from "next/link";
+import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
+
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
 
@@ -23,24 +18,26 @@ export default function GallerySection() {
       >
         My Photos Gallery
       </h2>
-      <div className="gap-2 grid grid-cols-12 grid-rows-2 px-8">
+
+      <div className="gap-2 grid grid-cols-2 sm:grid-cols-4">
         {SITECONFIG?.galleryImageInfo?.map((el, index) => (
-          <Link href={`/image-gallery/${el?.id}`}>
-            <Card className={`col-span-12 h-[300px] md:col-span-4`}>
-              <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-                <p className="text-tiny text-white/60 uppercase font-bold">
-                  {el?.imageDate}
-                </p>
-                <h4 className="text-white font-medium text-large">
-                  {el?.imageTitle}
-                </h4>
-              </CardHeader>
-              <Image
-                removeWrapper
-                alt="Card background"
-                className="z-0 w-full h-full object-cover"
-                src={el?.mainImageUrl}
-              />
+          <Link key={index} href={`/image-gallery/${el?.id}`} className="">
+            <Card shadow="sm" isPressable>
+              <CardBody className="overflow-visible p-0">
+                <Image
+                  isZoomed
+                  shadow="sm"
+                  radius="lg"
+                  width="100%"
+                  alt={el?.title}
+                  className="w-full object-cover h-[300px]"
+                  src={el?.mainImageUrl}
+                />
+              </CardBody>
+              <CardFooter className="text-small justify-between">
+                <b>{el?.imageTitle}</b>
+                <p className="text-default-500">{el?.imageDate}</p>
+              </CardFooter>
             </Card>
           </Link>
         ))}
