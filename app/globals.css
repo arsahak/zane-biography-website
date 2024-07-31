@@ -8,6 +8,8 @@ body {
 
 html {
   font-family: var(--font-inter);
+  /* styles/globals.css */
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -134,7 +136,7 @@ h1 {
 .nav-item {
   position: relative;
   display: inline-block;
-  color: #ffffff;
+  color: #4e4e4e;
   font-weight: 600;
   font-size: 1.125rem; /* text-lg */
   cursor: pointer;
@@ -148,7 +150,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #ffffff;
+  background-color: #080808;
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.3s ease-out;

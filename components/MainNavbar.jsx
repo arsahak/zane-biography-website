@@ -34,9 +34,8 @@ const MainNavbar = () => {
     <Navbar
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-      shouldHideOnScroll
       maxWidth="2xl"
-      className="flex !justify-center bg-transparent bg-cover py-1 fixed top-0 shadow-md"
+      className="flex !justify-center bg-transparent bg-cover py-1 fixed top-0 shadow-md bg-slate-100"
     >
       <NavbarContent className="md:hidden ml-0" justify="start">
         <NavbarMenuToggle className="text-slate-50 ml-0" />
@@ -60,12 +59,13 @@ const MainNavbar = () => {
         {SITECONFIG?.mainNavbar?.map((nav, index) => {
           return (
             <NavbarItem key={index}>
-              <span
+              <Link
+                href={`#${nav.slug}`}
                 onClick={() => handleNavItemClick(nav.slug)}
                 className={`nav-item ${pathname === nav.slug ? "active" : ""}`}
               >
                 {nav.title}
-              </span>
+              </Link>
             </NavbarItem>
           );
         })}
@@ -76,7 +76,8 @@ const MainNavbar = () => {
       <NavbarMenu className="ml-0">
         {SITECONFIG?.mainNavbar?.map((nav, index) => (
           <NavbarMenuItem key={`${nav}-${index}`} className="list-none mt-4">
-            <span
+            <Link
+              href={`#${nav.slug}`}
               onClick={() => handleNavItemClick(nav.slug)}
               className={`nav-item list-none ${
                 pathname === nav.slug
@@ -86,7 +87,7 @@ const MainNavbar = () => {
               size="lg"
             >
               {nav.title}
-            </span>
+            </Link>
           </NavbarMenuItem>
         ))}
       </NavbarMenu>

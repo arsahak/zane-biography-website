@@ -20,20 +20,25 @@ export const SITECONFIG = {
 
   mainNavbar: [
     {
-      title: "About",
-      slug: "/about",
+      title: "Home",
+      slug: "home-me",
     },
     {
-      title: "Resume",
-      slug: "/resume",
+      title: "About Me",
+      slug: "about-me",
     },
     {
-      title: "Portfolio",
-      slug: "/portfolio",
+      title: "Education",
+      slug: "education-me",
     },
     {
-      title: "Contact",
-      slug: "/contact",
+      title: "Gallery",
+      slug: "gallery-me",
+    },
+
+    {
+      title: "Contact Me",
+      slug: "contact-me",
     },
   ],
 
