@@ -53,11 +53,11 @@ export const SITECONFIG = {
     subTitle: "https://zanesgradparty.rsvpify.com",
     heroBgSilderImg: [
       {
-        url: "/assets/horo-banner1.png",
+        url: "/assets/horo-banner1.jpg",
         alt: "hero-banner1",
       },
       {
-        url: "/assets/horo-banner1.png",
+        url: "/assets/horo-banner1.jpg",
         alt: "hero-banner1",
       },
     ],
@@ -66,7 +66,7 @@ export const SITECONFIG = {
   // Site aboute section info
 
   aboutMeInfo: {
-    aboutImg: "/assets/horo-banner1.png",
+    aboutImg: "/assets/horo-banner1.jpg",
     aboutMe:
       "Accumsan volutpat ocurreret id nam, solet numquam accommodare quo et. Et vidit choro aliquid pro, ad inani eirmod vituperata duo. Ut ludus vulputate qui, movartem accom modare eos no, vix error percipitur.Accumsan volutpat ocurreret id nam, solet numquam accommodare quo et. Et vidit choro aliquid pro, ad inani eirmod vituperata duo. Ut ludus vulputate qui, movartem accom modare eos no, vix error percipitur.",
 
