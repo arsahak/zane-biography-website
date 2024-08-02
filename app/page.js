@@ -18,6 +18,7 @@
 
 "use client";
 import AboutSection from "@/components/AboutSection";
+import BlogSection from "@/components/BlogSection";
 import ContactSection from "@/components/ContactSection";
 import EducationSection from "@/components/EducationSection";
 import GallerySection from "@/components/GallerySection";
@@ -46,20 +47,22 @@ const Home = () => {
 
   return (
     <>
-      <MainNavbar />
-      <section id="home-me" style={{ height: "100vh" }}>
+      <div className="">
+        <MainNavbar />
+      </div>
+      <section id="home-me">
         <HeroSection />
       </section>
-      <section id="about-me" style={{ height: "100vh" }}>
+      <section id="about-me">
         <AboutSection />
       </section>
-      <section id="education-me" style={{ height: "100vh" }}>
+      <section id="education-me">
         <EducationSection />
       </section>
-      <section id="gallery-me" style={{ height: "100vh" }}>
+      <section id="gallery-me">
         <GallerySection />
       </section>
-      <section id="contact-me" style={{ height: "100vh" }}>
+      <section id="contact-me">
         <ContactSection />
       </section>
     </>

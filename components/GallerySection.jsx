@@ -12,7 +12,7 @@ const mulish = Mulish({ subsets: ["latin"] });
 
 export default function GallerySection() {
   return (
-    <section id="gallery-me">
+    <section id="gallery-me" className="pt-16">
       <SectionLayout>
         <h2
           className={`text-stone-950 font-bold text-4xl mt-4 mb-10 text-center ${bitter.className}`}

@@ -52,10 +52,10 @@ const ContactSection = () => {
     // Check if there are any errors
     if (Object.keys(errors).length === 0) {
       send(
-        "service_21srltl41",
-        "template_regri0n41",
+        "service_gzkvhcq",
+        "template_48bzfm6",
         emailForm,
-        "QQbwIXKpnJegjLF_x1"
+        "lV8GXzHudtzTEZK1s"
       )
         .then((response) => {
           setLoading(false); // Stop loading
@@ -93,7 +93,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact-me">
+    <section id="contact-me" className="pt-16">
       <SectionLayout bg="bg-white">
         <h2
           className={`text-stone-950 font-bold text-4xl mb-4 text-center md:text-left ${bitter.className}`}

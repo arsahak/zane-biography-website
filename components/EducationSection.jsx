@@ -8,9 +8,9 @@ const mulish = Mulish({ subsets: ["latin"] });
 
 const EducationSection = () => {
   return (
-    <section id="education-me">
+    <section id="education-me" className="pt-16">
       <SectionLayout>
-        <div className="flex flex-col md:flex-row item-start gap-10 mx-10">
+        <div className="flex flex-col md:flex-row item-start gap-10 mx-10 bg">
           <div className="w-[100%] md:w-[25%]">
             <h2
               className={`text-stone-950 font-bold text-3xl mb-4 text-center md:text-left ${bitter.className}`}

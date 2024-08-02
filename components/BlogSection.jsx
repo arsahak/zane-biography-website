@@ -13,9 +13,9 @@ import AboutSilder from "./AboutSilder";
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
 
-const AboutSection = () => {
+const BlogSection = () => {
   return (
-    <section id="about-me" className="pt-16">
+    <section id="blog" className="pt-16">
       <SectionLayout bg="bg-slate-50 ">
         <div className="">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-start">
@@ -89,4 +89,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default BlogSection;

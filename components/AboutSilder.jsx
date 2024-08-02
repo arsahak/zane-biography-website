@@ -14,7 +14,22 @@ export default function AboutSilder({ silderData }) {
   return (
     <>
       <Swiper
-        spaceBetween={30}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        }}
+        spaceBetween={50}
+        slidesPerView={3}
         centeredSlides={true}
         autoplay={{
           delay: 2500,

@@ -35,10 +35,10 @@ const MainNavbar = () => {
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       maxWidth="2xl"
-      className="flex !justify-center bg-transparent bg-cover py-1 fixed top-0 shadow-md bg-slate-100"
+      className="flex !justify-center bg-slate-300 bg-cover py-1 fixed top-0 shadow-md"
     >
       <NavbarContent className="md:hidden ml-0" justify="start">
-        <NavbarMenuToggle className="text-slate-50 ml-0" />
+        <NavbarMenuToggle className="text-slate-900 ml-0" />
       </NavbarContent>
 
       <NavbarContent className=" md:hidden" justify="end">
@@ -60,7 +60,7 @@ const MainNavbar = () => {
           return (
             <NavbarItem key={index}>
               <Link
-                href={`#${nav.slug}`}
+                href={nav.slug === "blog" ? `/blog` : `#${nav.slug}`}
                 onClick={() => handleNavItemClick(nav.slug)}
                 className={`nav-item ${pathname === nav.slug ? "active" : ""}`}
               >

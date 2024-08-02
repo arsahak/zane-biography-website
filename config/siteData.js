@@ -35,7 +35,10 @@ export const SITECONFIG = {
       title: "Gallery",
       slug: "gallery-me",
     },
-
+    {
+      title: "Blog",
+      slug: "blog",
+    },
     {
       title: "Contact Me",
       slug: "contact-me",
@@ -46,23 +49,15 @@ export const SITECONFIG = {
 
   heroBannerInfo: {
     topTitle: "Giving You Advices That Matters",
-    mainTitle: "Hardam Tripathi, Esq.",
-    subTitle: "Connecting Families To Their Immigration Dream",
+    mainTitle: "Graduation Party",
+    subTitle: "https://zanesgradparty.rsvpify.com",
     heroBgSilderImg: [
       {
         url: "/assets/horo-banner1.png",
         alt: "hero-banner1",
       },
       {
-        url: "/assets/horo-banner2.png",
-        alt: "hero-banner1",
-      },
-      {
         url: "/assets/horo-banner1.png",
-        alt: "hero-banner1",
-      },
-      {
-        url: "/assets/horo-banner2.png",
         alt: "hero-banner1",
       },
     ],
@@ -183,6 +178,15 @@ export const SITECONFIG = {
   ],
 
   aboutSilderImageList: [
+    {
+      imgUrl: "/gallery-image/imageone.jpeg",
+    },
+    {
+      imgUrl: "/gallery-image/pexels-fotios-photos-1369476.jpg",
+    },
+    {
+      imgUrl: "/gallery-image/pexels-jakubzerdzicki-26689753.jpg",
+    },
     {
       imgUrl: "/gallery-image/pexels-cottonbro-6804612.jpg",
     },
