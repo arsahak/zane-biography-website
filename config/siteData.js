@@ -53,11 +53,11 @@ export const SITECONFIG = {
     subTitle: "Welcome to my Portal for more details",
     heroBgSilderImg: [
       {
-        url: `/assets/horo-banner1.png`,
+        url: "/gallery-image/hsgp-1.png",
         alt: "hero-banner1",
       },
       {
-        url: `/assets/horo-banner1.png`,
+        url: "/gallery-image/hsgp-1.png",
         alt: "hero-banner1",
       },
     ],
