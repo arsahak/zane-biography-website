@@ -48,9 +48,9 @@ export const SITECONFIG = {
   // Site hero banner info
 
   heroBannerInfo: {
-    topTitle: "Giving You Advices That Matters",
-    mainTitle: "Graduation Party",
-    subTitle: "https://zanesgradparty.rsvpify.com",
+    topTitle: "Sky is the Limit. Fly like a bird",
+    mainTitle: "Graduation Party on 23rd August 2024",
+    subTitle: "Welcome to my Portal for more details",
     heroBgSilderImg: [
       {
         url: `/assets/horo-banner1.png`,
@@ -68,23 +68,23 @@ export const SITECONFIG = {
   aboutMeInfo: {
     aboutImg: `/assets/horo-banner1.png`,
     aboutMe:
-      "Accumsan volutpat ocurreret id nam, solet numquam accommodare quo et. Et vidit choro aliquid pro, ad inani eirmod vituperata duo. Ut ludus vulputate qui, movartem accom modare eos no, vix error percipitur.Accumsan volutpat ocurreret id nam, solet numquam accommodare quo et. Et vidit choro aliquid pro, ad inani eirmod vituperata duo. Ut ludus vulputate qui, movartem accom modare eos no, vix error percipitur.",
+      "I am Zane Pervez grew up in Texas dallas nortwest part of the DFW area. I finished my school from Lake view elementary  then medlin and Byron nelson High school. i was in biomed academy in my high school. Currently i enrolled pre-med in barnard college of columnbia university.",
 
     personalInfoLeft: [
       {
         icon: "IoMdCheckmarkCircleOutline",
         title: "Location:",
-        details: "Victoria, BC",
+        details: "Trophy Club Texas 76262",
       },
       {
         icon: "IoMdCheckmarkCircleOutline",
         title: "Nationality:",
-        details: "Canadian / Iris",
+        details: "Asian American",
       },
       {
         icon: "IoMdCheckmarkCircleOutline",
         title: "Study:",
-        details: "University of Victoria",
+        details: "Barnard college of columbia University",
       },
     ],
 
@@ -92,33 +92,33 @@ export const SITECONFIG = {
       {
         icon: "IoMdCheckmarkCircleOutline",
         title: "Age:",
-        details: "29",
+        details: "19",
       },
       {
         icon: "IoMdCheckmarkCircleOutline",
         title: "Interests:",
-        details: "Motorcycles, Muay Thai, Banjos",
+        details: "Reading books, watch concerts",
       },
       {
         icon: "IoMdCheckmarkCircleOutline",
-        title: "Employment:",
-        details: "Instant Domains, inc.",
+        title: "Passion:",
+        details: "Reading books",
       },
     ],
   },
 
   educationInfo: [
     {
-      mainTitle: "Masters in Beer tasting",
-      subTitle: "Masters in Beer tasting Clown college • April 2007",
+      mainTitle: "Becholor of NueroScience and psychology ",
+      subTitle: "Barnard college of columbia university ",
       details:
-        "Describe your experience at school, what you learned, what useful skills you have acquired etc.",
+        "Vission to be a docotor",
     },
     {
-      mainTitle: "Masters in Beer tasting",
-      subTitle: "Masters in Beer tasting Clown college • April 2007",
+      mainTitle: "High school diploma in Bio-med Academy",
+      subTitle: "Byron Nelson High School",
       details:
-        "Describe your experience at school, what you learned, what useful skills you have acquired etc.",
+        "school description",
     },
   ],
 
@@ -205,9 +205,9 @@ export const SITECONFIG = {
   ],
 
   contactDataInfo: {
-    address: "1543 Lakeland Hills Blvd, Ste. 17, Lakeland, FL 33805",
-    phone: "(863)-599-6735",
-    email: "info@trip-law.com",
+    address: "24 Durango Drive, Trophy Club, TX 76262",
+    phone: "(682)-277-6756",
+    email: "info@zane.bio",
   },
 
   socialLinks: [
