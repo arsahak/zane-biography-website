@@ -57,11 +57,11 @@ export const SITECONFIG = {
         alt: "hero-banner1",
       },
       {
-        url: "/gallery-image/p2.jpg",
+        url: "/gallery-image/p21.jpg",
         alt: "hero-banner1",
       },
       {
-        url: "/gallery-image/p3.png",
+        url: "/gallery-image/p2.png",
         alt: "hero-banner1",
       },
       
@@ -190,22 +190,22 @@ export const SITECONFIG = {
       imgUrl: "/gallery-image/p3.png",
     },
     {
-      imgUrl: "/gallery-image/pexels-jakubzerdzicki-26689753.jpg",
+      imgUrl: "/gallery-image/fp-5.png",
     },
     {
-      imgUrl: "/gallery-image/pexels-cottonbro-6804612.jpg",
+      imgUrl: "/gallery-image/fp-6.png",
     },
     {
-      imgUrl: "/gallery-image/pexels-fotios-photos-1369476.jpg",
+      imgUrl: "/gallery-image/fp-7.png",
     },
     {
-      imgUrl: "/gallery-image/pexels-jakubzerdzicki-26689753.jpg",
+      imgUrl: "/gallery-image/fp-8.png",
     },
     {
-      imgUrl: "/gallery-image/pexels-mikhail-nilov-9158719.jpg",
+      imgUrl: "/gallery-image/fp-9.png",
     },
     {
-      imgUrl: "/gallery-image/pexels-mikhail-nilov-9158719.jpg",
+      imgUrl: "/gallery-image/fp-9.png",
     },
   ],
 
