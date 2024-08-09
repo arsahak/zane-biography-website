@@ -66,7 +66,7 @@ export const SITECONFIG = {
   // Site aboute section info
 
   aboutMeInfo: {
-    aboutImg: "/gallery-image/p2.jpg",
+    aboutImg: "/gallery-image/fp-2.png",
     aboutMe:
       "I am Zane Pervez grew up in Texas dallas nortwest part of the DFW area. I finished my school from Lake view elementary  then medlin and Byron nelson High school. i was in biomed academy in my high school. Currently i enrolled pre-med in barnard college of columnbia university.",
 
@@ -134,16 +134,16 @@ export const SITECONFIG = {
           imgUrl: "/gallery-image/pexels-cottonbro-6804612.jpg",
         },
         {
-          imgUrl: "/gallery-image/pexels-fotios-photos-1369476.jpg",
+          imgUrl: "/gallery-image/fp-1.png",
         },
         {
-          imgUrl: "/gallery-image/pexels-jakubzerdzicki-26689753.jpg",
+          imgUrl: "/gallery-image/fp-2.png",
         },
         {
-          imgUrl: "/gallery-image/pexels-mikhail-nilov-9158719.jpg",
+          imgUrl: "/gallery-image/fp-3.png",
         },
         {
-          imgUrl: "/gallery-image/pexels-mikhail-nilov-9158719.jpg",
+          imgUrl: "/gallery-image/fp-4.png",
         },
       ],
     },
