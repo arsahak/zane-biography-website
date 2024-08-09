@@ -60,6 +60,11 @@ export const SITECONFIG = {
         url: "/gallery-image/p2.jpg",
         alt: "hero-banner1",
       },
+      {
+        url: "/gallery-image/p3.png",
+        alt: "hero-banner1",
+      },
+      
     ],
   },
 
@@ -182,7 +187,7 @@ export const SITECONFIG = {
       imgUrl: "/gallery-image/imageone.jpeg",
     },
     {
-      imgUrl: "/gallery-image/pexels-fotios-photos-1369476.jpg",
+      imgUrl: "/gallery-image/p3.png",
     },
     {
       imgUrl: "/gallery-image/pexels-jakubzerdzicki-26689753.jpg",
