@@ -57,11 +57,11 @@ export const SITECONFIG = {
         alt: "hero-banner1",
       },
       {
-        url: "/gallery-image/p21.jpg",
+        url: "/gallery-image/p4.png",
         alt: "hero-banner1",
       },
       {
-        url: "/gallery-image/p2.png",
+        url: "/gallery-image/p21.jpg",
         alt: "hero-banner1",
       },
       
@@ -131,9 +131,9 @@ export const SITECONFIG = {
     {
       id: 1,
       colSpan: "md:col-span-4",
-      imageDate: "5 Jun 2018 - 31 Dec 2018",
-      imageTitle: "Stream the Acme event",
-      mainImageUrl: "/gallery-image/pexels-cottonbro-3944417.jpg",
+      imageDate: "31 May 2024",
+      imageTitle: "Grad Party Event",
+      mainImageUrl: "/gallery-image/fp-4.png",
       imageList: [
         {
           imgUrl: "/gallery-image/pexels-cottonbro-6804612.jpg",
@@ -156,27 +156,27 @@ export const SITECONFIG = {
     {
       id: 2,
       colSpan: "md:col-span-6",
-      imageDate: "5 Jun 2020 - 31 Dec 2022",
-      imageTitle: "Stream the Acme event",
-      mainImageUrl: "/gallery-image/pexels-tima-miroshnichenko-9572509.jpg",
+      imageDate: "5 Jun 2010 - 31 July 2024",
+      imageTitle: "Family event",
+      mainImageUrl: "/gallery-image/fp-10.png",
       imageList: [
         {
-          imgUrl: "/gallery-image/hero-banner-two.jpg",
+          imgUrl: "/gallery-image/fp-11.png",
         },
         {
-          imgUrl: "/gallery-image/pexels-cottonbro-3944417.jpg",
+          imgUrl: "/gallery-image/fp-12.png",
         },
         {
-          imgUrl: "/gallery-image/hero-banner-one.jpg",
+          imgUrl: "/gallery-image/fp-13.png",
         },
         {
-          imgUrl: "/gallery-image/hero-banner-three.jpg",
+          imgUrl: "/gallery-image/fp-14.png",
         },
         {
-          imgUrl: "/gallery-image/hero-banner-two.jpg",
+          imgUrl: "/gallery-image/fp-15.png",
         },
         {
-          imgUrl: "/gallery-image/pexels-cottonbro-3944417.jpg",
+          imgUrl: "/gallery-image/fp-16.png",
         },
       ],
     },
