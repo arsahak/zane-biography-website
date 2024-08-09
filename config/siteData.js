@@ -57,7 +57,7 @@ export const SITECONFIG = {
         alt: "hero-banner1",
       },
       {
-        url: "/gallery-image/p2-1.png",
+        url: "/gallery-image/p2.png",
         alt: "hero-banner1",
       },
     ],
@@ -66,7 +66,7 @@ export const SITECONFIG = {
   // Site aboute section info
 
   aboutMeInfo: {
-    aboutImg: "/gallery-image/p2-1.png",
+    aboutImg: "/gallery-image/p2.png",
     aboutMe:
       "I am Zane Pervez grew up in Texas dallas nortwest part of the DFW area. I finished my school from Lake view elementary  then medlin and Byron nelson High school. i was in biomed academy in my high school. Currently i enrolled pre-med in barnard college of columnbia university.",
 
