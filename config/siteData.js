@@ -133,7 +133,7 @@ export const SITECONFIG = {
       colSpan: "md:col-span-4",
       imageDate: "31 May 2024",
       imageTitle: "Grad Party Event",
-      mainImageUrl: "/gallery-image/fp-4.png",
+      mainImageUrl: "/gallery-image/ani-3.gif",
       imageList: [
         {
           imgUrl: "/gallery-image/pexels-cottonbro-6804612.jpg",
