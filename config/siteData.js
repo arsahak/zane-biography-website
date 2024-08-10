@@ -158,7 +158,7 @@ export const SITECONFIG = {
       colSpan: "md:col-span-6",
       imageDate: "5 Jun 2010 - 31 July 2024",
       imageTitle: "Family event",
-      mainImageUrl: "/gallery-image/fp-10.png",
+      mainImageUrl: "/gallery-image/source.gif",
       imageList: [
         {
           imgUrl: "/gallery-image/fp-11.png",
