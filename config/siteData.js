@@ -61,7 +61,7 @@ export const SITECONFIG = {
         alt: "hero-banner1",
       },
       {
-        url: "/gallery-image/ani-1.json",
+        url: "/gallery-image/ani-2.gif",
         alt: "hero-banner1",
       },
       
