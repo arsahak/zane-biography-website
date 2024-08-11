@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import GetAllPostData from "@/lib/GetAllPostData";
 import parse from "html-react-parser";
 import { Link } from "@nextui-org/react";
 import MotionEffect from "@/components/motion/MotionEffect";
 import SectionLayout from "@/components/shared/SectionLayout";
+import { blogData } from "@/config/blogData";
 
 const css = `
   h1{
@@ -34,9 +34,7 @@ const css = `
 `;
 
 const page = async ({ params }) => {
-  const blogPostData = await GetAllPostData();
-
-  const blogDetails = blogPostData?.data?.filter(
+  const blogDetails = await blogData?.filter(
     (blogs) => blogs.slug === params.slug
   );
 
@@ -68,56 +66,54 @@ const page = async ({ params }) => {
                 <Image
                   width={2000}
                   height={300}
-                  src={blogs?.featuredImage?.image?.url}
-                  alt={blogs?.featuredImage?.altText}
+                  src={blogs?.image}
+                  alt={"image"}
                   className="w-full h-full bg-center bg-cover"
                 />
 
                 <p className="text-[1rem] text-black text-left italic mt-8">
-                  {postDate(blogs?.createdAt)}
+                  {postDate(blogs?.date)}
                 </p>
                 <div className="mt-5 text-base">{parse(blogs?.body)}</div>
               </MotionEffect>
             </div>
           ))}
 
-          <div className="col-span-2 sm:col-span-1 h-[100%] md:h-[700px] overflow-y-scroll overflow-x-hidden ">
-            {blogPostData?.data
-              ?.filter((pub, no) => pub.published === true)
-              ?.map((blogs, index) => (
-                <MotionEffect effect="fade-left" duration="2000">
-                  <Link
-                    className="flex items-center gap-6 mb-4 "
-                    key={index}
-                    href={`/blog/${blogs?.slug}`}
-                  >
-                    <Image
-                      width={180}
-                      height={180}
-                      src={blogs?.featuredImage?.image?.url}
-                      alt={blogs?.featuredImage?.altText}
-                      className="bg-center bg-cover"
-                    />
-                    <div>
-                      <div className="text-[1rem] text-black text-left italic mt-0">
-                        {postDate(blogs?.createdAt)}
-                      </div>
-                      <div className="text-md tracking-normal font-bold text-[#1B2639] text-left mb-0 line-clamp-2">
-                        {blogs?.title}
-                      </div>
-                      <div className="font-normal text-[.8rem] text-black mb-4 text-justify sm:line-clamp-1 line-clamp-1 h-6">
-                        {parse(blogs?.body)}
-                      </div>
-                      <button
-                        type="button"
-                        class="text-white bg-[#1B2639] hover:bg-[#162030] font-medium text-base px-3 py-1.5 me-2 mb-2 focus:outline-none rounded-md"
-                      >
-                        Read More
-                      </button>
+          <div className="col-span-1 h-[100%] md:h-[700px] overflow-y-scroll overflow-x-hidden ">
+            {blogData?.map((blogs, index) => (
+              <MotionEffect effect="fade-left" duration="2000">
+                <Link
+                  className="flex items-center gap-6 mb-4 "
+                  key={index}
+                  href={`/blog/${blogs?.slug}`}
+                >
+                  <Image
+                    width={180}
+                    height={180}
+                    src={blogs?.image}
+                    alt={"image"}
+                    className="bg-center bg-cover"
+                  />
+                  <div>
+                    <div className="text-[1rem] text-black text-left italic mt-0">
+                      {postDate(blogs?.date)}
                     </div>
-                  </Link>
-                </MotionEffect>
-              ))}
+                    <div className="text-md tracking-normal font-bold text-[#1B2639] text-left mb-0 line-clamp-2">
+                      {blogs?.title}
+                    </div>
+                    <div className="font-normal text-[.8rem] text-black mb-4 text-justify sm:line-clamp-1 line-clamp-1 h-6">
+                      {parse(blogs?.body)}
+                    </div>
+                    <button
+                      type="button"
+                      class="text-white bg-[#1B2639] hover:bg-[#162030] font-medium text-base px-3 py-1.5 me-2 mb-2 focus:outline-none rounded-md"
+                    >
+                      Read More
+                    </button>
+                  </div>
+                </Link>
+              </MotionEffect>
+            ))}
           </div>
         </div>
       </SectionLayout>

@@ -7,7 +7,6 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import "./styles.css";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 export default function AboutSilder({ silderData }) {
