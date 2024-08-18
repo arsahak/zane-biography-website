@@ -6,7 +6,9 @@ export const blogData = [
     image: "/gallery-image/pexels-jakubzerdzicki-26689753.jpg",
     body: `<p>The key to your success on Fiverr is the brand you build for yourself through your Fiverr reputation. We gathered some tips and resources to help you become a leading seller on Fiverr.</p> 
     
-    <p>The key to your success on Fiverr is the brand you build for yourself through your Fiverr reputation. We gathered some tips and resources to help you become a leading seller on Fiverr.</p>`,
+    <p>The key to your success on Fiverr is the brand you build for yourself through your Fiverr reputation. <img src="/gallery-image/p2.jpg" alt="Italian Trulli">
+
+    We gathered some tips and resources to help you become a leading seller on Fiverr.</p>`,
   },
   {
     title: "Grow your business with Seller Plus",
