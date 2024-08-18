@@ -90,7 +90,7 @@ const HeroSection = () => {
                       href={"https://zanesgradparty.rsvpify.com"}
                       className="text-white bg-none hover:bg-red-800 font-medium text-sm md:text-lg px-2 md:px-8 py-2 me-0 md:me-6 mb-2 border border-white items-center justify-center flex"
                     >
-                      Join Pary
+                      Join Party
                     </Link>
                   </motion.div>
                 </div>
