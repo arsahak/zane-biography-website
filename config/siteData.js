@@ -48,7 +48,7 @@ export const SITECONFIG = {
   // Site hero banner info
 
   heroBannerInfo: {
-    topTitle: "Sky is the Limit. Fly like a bird",
+    topTitle: "Hello World" , 
     mainTitle: "Graduation Party on 23rd August 2024",
     subTitle: "Welcome to my Portal for more details",
     heroBgSilderImg: [
